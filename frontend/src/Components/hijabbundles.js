@@ -36,8 +36,7 @@ function Bundles() {
   return (
     <div>
       <Header />
-      <div className="abaya-heading">
-        <><br /><br /><br /><br /><br /><br /><br /></>
+      <div className="abaya-heading"><><br/><br/></>
         <h2>BUNDLE BOXES</h2>
       </div>
       <div>

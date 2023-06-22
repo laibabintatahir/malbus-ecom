@@ -33,7 +33,7 @@ function Hijab() {
     <div>
       <Header />
       <div className="abaya-heading">
-      <><br/><br/><br/><br/><br/><br/><br/></>
+      <><br/><br/></>
         <h2>HIJABS</h2>
       </div>
       <div>

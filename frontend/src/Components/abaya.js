@@ -39,7 +39,7 @@ function Abaya() {
   return (
     <div className="abaya">
       <Header />
-      <><br/><br/><br/><br/><br/><br/></>
+      <><br/><br/></>
       <div className="abaya-heading">
         <h2>ABAYAS</h2>
       </div>

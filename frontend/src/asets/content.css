@@ -1,6 +1,6 @@
 .new-arr{
     text-align: center;
-    margin-top: 2%;
+    margin-top: 300px;
     margin-bottom: 3%;
     border-bottom: 1px solid rgb(169, 167, 167);
     padding: 1%;
@@ -10,13 +10,55 @@
 }
 .b1{
     width: 65%;
-    background-color: black;
+    background-color: rgb(191, 83, 83);
     color: white;
-    border: 1px solid black;
+    border: none;
+    border-radius: 2px;
     height: 35px;
 }
 .b1:hover{
-    background-color: white;
+    background-color: rgb(156, 112, 112);
     color: black;
 
 }
+
+/* ..............banner main.............. */
+
+.banner-container {
+    height: 300px;
+    position: relative;
+  }
+  
+  .banner-content {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .banner-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .banner-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .banner-button {
+    padding: 10px 20px;
+    background-color: #ff014f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .banner-button:hover {
+    background-color: #e10046;
+  }
