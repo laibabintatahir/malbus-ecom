@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../asets/cart.css';
-import {AppContext} from './abayacontext';
+// import {AppContext} from './abayacontext';
 import { getProduct } from '../Service/api';
 
 

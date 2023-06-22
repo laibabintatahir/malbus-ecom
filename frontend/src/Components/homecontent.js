@@ -69,7 +69,7 @@ function Content() {
 
                 </div>
             </div>
-            <h3 className="new-arr">
+            <h3 className="new-arr1">
                 NEW ARRIVIALS
             </h3>
             <div>
@@ -88,6 +88,21 @@ function Content() {
 
                 </div>
             </div>
+
+            <div className="banner">
+        <img src="../images/malbus1.jpg " alt="Banner" />
+        <div className="banner-text">
+          <h2>LUXE MALBUS</h2>
+          <p>
+            Head Office: Plot #2, Industrial Triangle, Humak, Model Town,
+            Islamabad
+          </p>
+          <p>Outlet: Shop # 254, 2nd Floor, The Centaurus Mall, Islamabad</p>
+          <p>Monday - Thursday, 11:00 AM (PST) - 11:00 PM (PST)</p>
+          <p>Friday - Sunday, 11:00 AM (PST) - 12:00 AM (PST)</p>
+        </div>
+      </div>
+
         </div>
     )
 } export default Content;

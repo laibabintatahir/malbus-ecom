@@ -36,13 +36,13 @@ function App() {
           element={<Cart cartItems={cartItems} />}
         />
         <Route path="/details" element={<AbayaDetail />} />
-        <Route path="/Components/signup" element={<SignUpForm />}></Route>
-        <Route path="/Components/hijabbundles" element={<Bundles />}></Route>
-        <Route path="/Components/about" element={<About />}></Route>
-        <Route path="/Components/contact" element={<ContactUs />}></Route>
+        <Route path="/Components/signup" element={<SignUpForm />}/>
+        <Route path="/Components/hijabbundles" element={<Bundles />}/>
+        <Route path="/Components/about" element={<About />}/>
+        <Route path="/Components/contact" element={<ContactUs />}/>
         <Route path="/Components/admin" element={<Admin />}></Route>
-        <Route path="/Components/adminaddprod" element={<AddProduct />}></Route>
-        <Route path="/Components/admincustomer" element={<Customers />}></Route>
+        <Route path="/Components/adminaddprod" element={<AddProduct />}/>
+        <Route path="/Components/admincustomer" element={<Customers />}/>
       </Routes>
     </div>
   );

@@ -8,6 +8,16 @@
     margin-left: 2%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+.new-arr1{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 3%;
+    border-bottom: 1px solid rgb(169, 167, 167);
+    padding: 1%;
+    width: 32%;
+    margin-left: 2%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 .b1{
     width: 65%;
     background-color: rgb(191, 83, 83);
@@ -62,3 +72,42 @@
   .banner-button:hover {
     background-color: #e10046;
   }
+
+  
+/* ..............bottom banner..............  */
+.banner {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #040404;
+    background-color: rgb(242, 237, 233);
+    padding: 30px;
+  }
+  
+  .banner-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 8px;
+  }
+  
+  .banner-text p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
