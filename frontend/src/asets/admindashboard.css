@@ -1,9 +1,9 @@
 /* navbar.css */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
-    background-color: #e9cece;
+    background-color: #e7cfb0;
     padding: 10px;
   }
   

@@ -7,8 +7,8 @@ const AdminDashboard = () => {
         <div>
             <Nav />
          </div>
-         <div style={{width:'100%'}}>
-            <img src='../images/stats.png' alt='aly' style={{marginLeft:'16%',marginTop:'-5%'}}/>
+         <div style={{width:'100vw'}}>
+            <img src='../images/admin.jpg' alt='aly' style={{marginLeft:'16%',marginTop:'-5%'}}/>
          </div>
     </div>
     

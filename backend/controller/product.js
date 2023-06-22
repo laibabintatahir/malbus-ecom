@@ -9,7 +9,6 @@ export const getProduct=async(req,res)=>{
     }catch(e){
         console.log("error in the getProduct is : ", e);
     }
-    
 }
 
 export const postProduct= async (req,res)=>{
