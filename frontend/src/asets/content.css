@@ -1,100 +1,22 @@
-
-
-/* content.css */
-
-.carousel {
-    margin-top: 20px;
-  }
-  
-  .new-arr {
+.new-arr{
     text-align: center;
-    font-size: 24px;
-    margin: 40px 0;
-  }
-  
-  .abaya-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .abaya-card {
-    width: 250px;
-    margin: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .abaya-img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .sm-cart {
-    padding-top: 10px;
-    text-align: center;
-  }
-  
-  .b1 {
-    display: inline-block;
-    background-color: #d2313e;
-    color: #fff;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  .b1 img {
-    vertical-align: middle;
-  }
-  
-  .b1:focus,
-  .b1:hover {
-    background-color: #e63280;
-  }
-  
-
-  /* ..............banner main.............. */
-
-.banner-container {
-  height: 300px;
-  position: relative;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    border-bottom: 1px solid rgb(169, 167, 167);
+    padding: 1%;
+    width: 32%;
+    margin-left: 2%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.banner-content {
-  position: absolute;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  z-index: 1;
+.b1{
+    width: 65%;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    height: 35px;
 }
+.b1:hover{
+    background-color: white;
+    color: black;
 
-.banner-content h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
-}
-
-.banner-content p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.banner-button {
-  padding: 10px 20px;
-  background-color: #ff014f;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.banner-button:hover {
-  background-color: #e10046;
 }

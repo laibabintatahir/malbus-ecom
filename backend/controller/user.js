@@ -1,4 +1,4 @@
-import { userModel } from "../models/user.js";
+import { userModel } from "../model/user.js";
 
 
 export const postuser= async (req,res)=>{

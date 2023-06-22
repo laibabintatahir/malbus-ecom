@@ -22,4 +22,4 @@ const productStructure = mongoose.Schema(
 
 const productmodel=mongoose.model('Product',productStructure);
 
-export default productmodel;
+export  {productmodel};
