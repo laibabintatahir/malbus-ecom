@@ -8,7 +8,7 @@ export const addProduct = async (data) => {
 };
 
 export const getProduct = async () => {
-  return await axios.get(`${url}/product`);
+  return await axios.get(`${url}/abaya`);
 };
 
 export const addUser = async (user) => {

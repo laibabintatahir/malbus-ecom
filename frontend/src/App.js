@@ -25,10 +25,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/Components/loginform' element={<Login />}></Route>
-        <Route
-          path='/Components/abaya'
-          element={<Abaya addToCart={addToCart} />}
-        />
+        <Route path='/abaya' element={<Abaya addToCart={addToCart} />} />
         <Route path='/Components/hijab' element={<Hijab />}></Route>
         <Route path='/Components/home' element={<Home />}></Route>
         <Route

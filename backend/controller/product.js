@@ -3,6 +3,8 @@ import { productmodel } from '../model/product.js';
 export const getProduct = async (req, res) => {
   try {
     const data = await productmodel.find();
+    console.log('get Product is called');
+    console.log('The data is : ', data);
     res.json(data);
     console.log(data);
   } catch (e) {

@@ -21,5 +21,6 @@ connection
 app.use('/adminaddprod', productRouter);
 app.use('/signup', userRouter);
 app.use('/uploads', express.static('uploads'));
+app.use('/abaya', productRouter);
 
 app.listen(5000);
