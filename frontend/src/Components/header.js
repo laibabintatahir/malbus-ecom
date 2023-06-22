@@ -7,7 +7,7 @@ function Header(){
     // }
     return(
         <div className='nav-bar'>
-            <div className='free-ship'><h6>Free shipping for orders above than Rs.3000</h6></div>
+            <div className='free-ship'><h6>Free shipping for orders above than Rs.5000</h6></div>
             <div className="d1"> 
             <img src="..\images\Logo.jpg" alt="logo"  className='logo' />
             <div className='nav-div'>

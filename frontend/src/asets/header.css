@@ -1,8 +1,7 @@
 .nav-bar{
     width: 100%;
     height: auto;
-    z-index: 1000;
-    position: fixed;
+    /* z-index: 1000; */
     background-color: rgba(255, 255, 255, 0.5);
 }
 .nav-bar:hover{
@@ -55,9 +54,7 @@
     color: black;
 }
 .nav-div ul li:hover{
-    background-color: rgb(227, 129, 129);
-    color: aliceblue;
-    border-radius: 5px;
+    color: rgb(228, 157, 33);
     padding: 2px;
     border: none;
 

@@ -42,7 +42,7 @@ function Login(){
         <div>
            <div className="login-container">
             <div className="login-form">
-                <img src='../images/loginlogo.png' alt="lo" className="login-img"/>
+                <br/>  <br/>  <br/>   <br/>  <br/>
             <h3>LOGIN</h3>
             <form onSubmit={handleSubmit}>
                 <label style={{marginRight:'88%',paddingBottom:'2%',fontSize:'1.2em'}}>E-mail</label>

@@ -34,16 +34,6 @@ const Cart = () => {
     );
   };
 
-  // const handleIncrement = (item) => {
-  //   setAbaya((prevAbaya) =>
-  //     prevAbaya.map((abayaItem) => {
-  //       if (abayaItem.name === item.name) {
-  //         return { ...abayaItem, quantity: abayaItem.quantity + 1 };
-  //       }
-  //       return abayaItem;
-  //     })
-  //   );
-  // };
 
   return (
       <div className="cart-container">

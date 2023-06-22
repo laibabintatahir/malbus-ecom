@@ -41,11 +41,11 @@ function Login() {
   return (
     <div>
       <div className="login-container">
+        <br/><br/><br/><br/><br/><br/><br/>
         <div
           className="login-form"
-          style={{ marginTop: "0.5%", height: "97vh" }}
-        >
-          <img src="../images/loginlogo.png" alt="lo" className="login-img" />
+          style={{ marginTop: "0.5%", height: "90vh" }}>
+             <br/>  <br/>  <br/>  
           <h3>CREATE ACCOUNT</h3>
           <form onSubmit={handleSubmit}>
             <label
