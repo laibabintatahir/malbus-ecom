@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import { connection } from './db/connection.js';
 import productRouter from './routes/product.js';
-import postuser from './routes/user.js';
+import userRouter from './routes/user.js';
 const app = express();
 
 app.use(cors());
@@ -17,9 +17,9 @@ connection
   .catch((e) => {
     console.log('Error: ', e);
   });
- 
+
 app.use('/adminaddprod', productRouter);
-app.use('/user', postuser);
+app.use('/signup', userRouter);
 app.use('/uploads', express.static('uploads'));
 
 app.listen(5000);

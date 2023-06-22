@@ -8,13 +8,14 @@ export const addProduct = async (data) => {
 };
 
 export const getProduct = async () => {
-  //   return await axios.get(`${url}/product`);
+  return await axios.get(`${url}/product`);
 };
 
 export const addUser = async (user) => {
-  //   return await axios.post(`${url}/user`, user);
+  console.log('API CALLED');
+  await axios.post(`${url}/signup`, user);
 };
 
 export const getUser = async () => {
-  //   return await axios.get(`${url}/user`);
+  return await axios.get(`${url}/user`);
 };

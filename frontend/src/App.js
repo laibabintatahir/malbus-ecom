@@ -36,7 +36,7 @@ function App() {
           element={<Cart cartItems={cartItems} />}
         />
         <Route path='/details' element={<AbayaDetail />} />
-        <Route path='/Components/signup' element={<SignUpForm />} />
+        <Route path='/signup' element={<SignUpForm />} />
         <Route path='/Components/hijabbundles' element={<Bundles />} />
         <Route path='/Components/about' element={<About />} />
         <Route path='/Components/contact' element={<ContactUs />} />
