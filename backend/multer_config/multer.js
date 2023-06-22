@@ -2,14 +2,11 @@ import multer from "multer";
 
 const imgConfig=multer.diskStorage({
 
-
-
 destination:(req,file,callBack)=>{
    console.log("I am i destination : ")
    callBack(null,"./uploads/")
    
 },
-
 
 filename:(req,file,callBack)=>{
    console.log(file);
@@ -17,9 +14,7 @@ filename:(req,file,callBack)=>{
    callBack(null,`image-${Date.now()}.${file.originalname}`)
 }
 
-
 })
-
 
 const isImage=(req,file,callBack)=>{
 

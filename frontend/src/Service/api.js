@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url= "https://localhost:3000";
+const url= "https://localhost:5000";
 
 export const addProduct= async(data)=>{
     return await axios.post(`${url}/product`,data)

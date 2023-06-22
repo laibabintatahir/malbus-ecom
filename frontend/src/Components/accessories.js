@@ -1,9 +1,9 @@
 import Header from "./header";
 import '../asets/abaya.css';
-import { useState, useContext, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./footer";
-import { AppContext } from "./abayacontext";
+// import { AppContext } from "./abayacontext";
 import { getProduct } from "../Service/api";
 
 function Bundles() {
