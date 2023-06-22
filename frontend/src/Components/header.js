@@ -16,9 +16,9 @@ function Header(){
                         <Link to='/Components/home'><li>HOME</li></Link>
                         <Link to='/Components/abaya'><li>ABAYAS</li></Link>
                         <Link to='/Components/hijab'><li>HIJABS</li></Link>
-                        <Link to='/Components/niqab'><li>NIQABS</li></Link>
-                        <Link to='/Components/caps'><li>ABOUT US</li></Link>
-                        <Link to='/Components/caps'><li>CONTACT US</li></Link>
+                        <Link to='/Components/hijabbundles'><li>ACCESSIORIES</li></Link>
+                        <Link to='/Components/about'><li>ABOUT US</li></Link>
+                        <Link to='/Components/contact'><li>CONTACT US</li></Link>
                     </ul>
                 </nav>
 

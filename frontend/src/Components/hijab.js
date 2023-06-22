@@ -3,7 +3,6 @@ import '../asets/abaya.css';
 import { Link } from "react-router-dom";
 import Footer from "./footer";
 import { useContext, useEffect, useState } from "react";
-import { AppContext } from "./abayacontext";
 import { getProduct } from "../Service/api";
 
 function Hijab() {
@@ -33,10 +32,8 @@ function Hijab() {
   return (
     <div>
       <Header />
-      <div>
-        <img src="../images/hijabback.png" alt="log" className="ababack" />
-      </div>
       <div className="abaya-heading">
+      <><br/><br/><br/><br/><br/><br/><br/></>
         <h2>HIJABS</h2>
       </div>
       <div>

@@ -1,46 +1,43 @@
 import Header from "./header";
 import '../asets/abaya.css';
-import { useState, useContext,useEffect } from "react";
+import { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./footer";
 import { AppContext } from "./abayacontext";
 import { getProduct } from "../Service/api";
 
 function Bundles() {
-    const [bundle,setBundle]  = useState([]);
+  const [bundle, setBundle] = useState([]);
 
-    useEffect(() => {
-      getProducts();
-      console.log(bundle);
-    },[]);
+  useEffect(() => {
+    getProducts();
+    console.log(bundle);
+  }, []);
 
-    const getProducts = async () => {
-        const products = await getProduct();
-        setBundle(products.data);
-        
-      };
-    
-      const addToCart = (item) => {
-   
-        const updated = bundle.map((itm) =>
-          itm._id === item._id ? { ...itm, selected: true } : itm
-    
-    
-        );
-        console.log("item is : ", bundle[0]._id)
-        setBundle(updated);
-        console.log(updated);
-      };
-      const filteredAbaya =  bundle.filter((item) => item.category === "bundle");
+  const getProducts = async () => {
+    const products = await getProduct();
+    setBundle(products.data);
+
+  };
+
+  const addToCart = (item) => {
+
+    const updated = bundle.map((itm) =>
+      itm._id === item._id ? { ...itm, selected: true } : itm
+
+
+    );
+    console.log("item is : ", bundle[0]._id)
+    setBundle(updated);
+    console.log(updated);
+  };
+  const filteredAbaya = bundle.filter((item) => item.category === "bundle");
 
   return (
     <div>
       <Header />
-     
-      <div>
-        <img src="../images/bundles.png" alt="log" className="ababack" />
-      </div>
       <div className="abaya-heading">
+        <><br /><br /><br /><br /><br /><br /><br /></>
         <h2>BUNDLE BOXES</h2>
       </div>
       <div>
@@ -48,8 +45,8 @@ function Bundles() {
           {filteredAbaya.map((item) => (
             <div className="abaya-card" >
               <Link to="/details" state={{ from: item }}>
-              <img src={`https://halalwardrobe-server.onrender.com/uploads/${item.image}`} alt={item.name} className="abaya-img" />
-             </Link>
+                <img src={`https://halalwardrobe-server.onrender.com/uploads/${item.image}`} alt={item.name} className="abaya-img" />
+              </Link>
               <div id="sm-cart">
                 <p style={{ marginTop: '1%', marginBottom: "1%" }}>{item.name}</p>
                 <h6>Rs. {item.price} PKR</h6>

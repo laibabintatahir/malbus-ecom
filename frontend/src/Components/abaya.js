@@ -37,12 +37,9 @@ function Abaya() {
   const filteredAbaya =  abaya.filter((item) => item.category === "abaya");
 
   return (
-    <div>
+    <div className="abaya">
       <Header />
-     
-      <div>
-        <img src="../images/abayaback.png" alt="log" className="ababack" />
-      </div>
+      <><br/><br/><br/><br/><br/><br/></>
       <div className="abaya-heading">
         <h2>ABAYAS</h2>
       </div>

@@ -23,8 +23,6 @@
   .abaya-card img {
     width: 100%;
     height: auto;
-    /* object-fit: cover; */
-    /* border-radius: 5px; */
   }
   .ababack{
     width: 100%;
@@ -36,3 +34,4 @@
     margin-bottom: 3%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
+ 

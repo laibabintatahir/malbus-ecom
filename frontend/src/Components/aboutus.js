@@ -1,24 +1,52 @@
 import Header from "./header";
 import Footer from "./footer";
 import '../asets/aboutus.css';
-function About(){
-    return(
+function About() {
+    return (
         <div>
             <Header />
             <div className="div-about">
-                <h2>About Us</h2>
-                <div style={{gap:'10% '}}>
+            <h2 style={{ textAlign: "center" }}>About Us</h2>
+
+                <div style={{ gap: '10% ' }}>
+
+
+                    <h2>Our Story</h2>
                     <p>
-                    We’re all about conserving culture with a little twist for women of all fields and ethnicities. Our team at The Hijab Company is celebrating a decade of experience in designing Abayas, Hijabs/Scarves, Accessories and our own Western Collection. We’re delighted to say that we have something for everyone and that’s what we aim to always retain.
+                        MALBUS is derived from the Urdu word "malboos", the plural of "libas" which means cloth/clothing. Our brand was born in 2012 out of a struggle of many Muslim women to dress up with modesty and elegance. We noticed a gap in the market where it was hard to find clothing that was elegant, on-trend, and above all, modest.
                     </p>
                     <p>
-                    We truly believe that every woman needs to feel secure, comfortable and confident out there in the world as we grow and continue to raise the experience of modest wear in Pakistan and worldwide.</p>
-                    <p>
-                    The Hijab Company does not compromise over the quality by thoroughly testing the fabric materials and paying attention to details. With the assortment of our fabric material, we make sure it's multipurpose and versatile enough for casual, professional, formal and semi-formal wear. We ensure that our fabric materials are breathable, comfortable, washable, sturdy and look beautiful on you!
+                        According to a sahih hadith: "Jabir reported: The Messenger of Allah, peace and blessings be upon him, said, 'Verily, Allah is beautiful and He loves beauty'." Allah has made modesty the crown of a Muslim woman. The purpose of MALBUS is to enlighten Allah's message and spread positivity.
                     </p>
+                    <p>
+                        Our mission is to create a world where every woman feels comfortable and confident. We strive to inspire women to always feel confident and empowered by their decisions to choose modest wear, and we provide a wardrobe of their dreams.
+                    </p>
+
+                    <h2>Our Products</h2>
+                    <p>
+                        Your decision to wear modest wear deserves to be celebrated with products that genuinely make your life easier, make you feel more comfortable and confident, and allow you to express your personal style. We take immense pride in using only the highest quality materials, precisely constructed to last.
+                    </p>
+                    <ul>
+                        <li>Abaya</li>
+                        <li>Kimono</li>
+                        <li>All Over</li>
+                        <li>Hijab</li>
+                        <li>Hijab pins</li>
+                        <li>Hijab magnets</li>
+                        <li>Hijab underscarves</li>
+                        <li>Scrunchies</li>
+                    </ul>
+
+                    <h2>Our Team</h2>
+                    <p>
+                        We’re a group of energetic individuals from various backgrounds, all passionately owning our mission of creating a world where every woman feels comfortable and confident according to the laws described by Allah (SWT), guided by openness, respect, growth, creativity, and fun.
+                    </p>
+
                 </div>
             </div>
             <Footer />
         </div>
     )
-}export default About;
+} export default About;
+
+
