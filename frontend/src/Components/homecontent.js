@@ -1,96 +1,128 @@
-import '../asets/content.css';
-import {useState} from 'react';
-import { Link } from 'react-router-dom';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
-function Content(){
-    const[abaya]=useState([
-    {name:'AYRA ABAYA White', price:5000.00,image:'../images/ha1.webp'},
-    {name:'MARYA ABAYA Purpule', price:6000.00,image:'../images/ha2.webp'},
-    {name:'MEHK ABAYA Blue', price:3000.00,image:'../images/ha3.webp'},
-    {name:'NASHEE ABAYA White', price:5000.00,image:'../images/ha4.webp'},
-    {name:'ALISH ABAYA Black', price:9000.00,image:'../images/ha5.webp'},
-    {name:'NASHI ABAYA Gray', price:8000.00,image:'../images/ha6.webp'},
-    {name:'OKAA ABAYA Black', price:7000.00,image:'../images/ha7.webp'},
-    {name:'LORA ABAYA Pink', price:6000.00,image:'../images/ha8.webp'},
-    {name:'ROSH ABAYA Purple', price:5000.00,image:'../images/ha9.webp'},
-    {name:'POSH ABAYA Pinkish', price:2000.00,image:'../images/ha10.webp'},
-    ])
-    const[hijab]=useState([
-        {name:'Chiffon Bubble Purple', price:700.00,image:'../images/hh1.webp'},
-        {name:'Chiffon Bubble Blue', price:700.00,image:'../images/hh2.webp'},
-        {name:'Chiffon Bubble Green', price:700.00,image:'../images/hh3.webp'},
-        {name:'Chiffon Bubble Frozen', price:700.00,image:'../images/hh4.webp'},
-        {name:'Chiffon Bubble Skin', price:700.00,image:'../images/hh5.webp'},
-        {name:'Chiffon Bubble Yellow', price:700.00,image:'../images/hh6.webp'},
-        {name:'Chiffon Bubble Gray', price:700.00,image:'../images/hh7.webp'},
-        ])
 
-    return(
-        <div>
-            <div>
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="../images/D2.png" class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                    <img src="../images/d3.png" class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                    <img src="../images/d1.png" class="d-block w-100" alt="..." />
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                </div>
-                <div>
+import React from 'react'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import { Link } from "react-router-dom";
+const Homecontent = () => {
+    const categories = [
+        {name: "Impressions", image: "images/impressions.jpg", link: "/abayapage",
+        },
+        { name: "Abayas", image: "images/abayas.jpg", link: "/abayapage" },
+        { name: "Kimonos", image: "images/kimonos1.jpg", link: "/abayapage" },
+        { name: "Hijabs", image: "images/h13.jpg", link: "/hijabs" },
+      ];
 
-                </div>
-                </div>
-                <h3 className="new-arr">
-                    NEW ARRIVIAL ABAYAS
-                </h3>
-                <div>
-                <div className="abaya-container">
-                {abaya.map((abaya) => (
-            <div className="abaya-card" key={abaya.id}>
-                <Link to="/details" state={{from:abaya}}><img src={abaya.image} alt={abaya.name} className="abaya-img"/></Link>
-                <div id="sm-cart">
-                <p style={{marginTop:'1%',marginBottom:"1%"}}>{abaya.name}</p>
-                <h6>Rs. {abaya.price} PKR</h6>
-                    <button className='b1' >
-                        <img src='../images/shopping-bag.png' alt='l' style={{width:'21px',height:'21px',marginRight:'3%',marginBottom:'1%'}}/>ADD TO CART</button>
-                     </div>
-                     </div>
-                 ))}
+      const Newarrivals = [
+        {
+          name: "OPULENT CHARM",
+          price: "from Rs.6,990.00",
+          image: "images/charm.jpg",
+        },
+        {
+          name: "VINTAGE GLAM",
+          price: "Rs.12,450.00",
+          image: "images/vintageglam.jpg",
+        },
+        { name: "LUXE", price: "Rs.22,750.00", image: "images/luxe.jpg" },
+        { name: "SERENE", price: "Rs.14,250.00", image: "images/serene.jpg" },
+      ];
+  return (
+    <div>
+      
+      <div className="banner-container">
+        <Carousel autoPlay infiniteLoop showThumbs={false}>
+          <div>
+            <img src="images/ss1.jpg" alt="Banner 1" />
+          </div>
+          <div>
+            <img src="images/ss1.jpg" alt="Banner 2" />
+          </div>
+        </Carousel>
 
-            </div>
-                </div>
-                <h3 className="new-arr">
-                    NEW ARRIVIAL HIJABS
-                </h3>
-                <div>
-                <div className="abaya-container">
-                {hijab.map((hijab) => (
-                <div className="abaya-card">
-                <Link to="/details" state={{from:hijab}}><img src={hijab.image} alt={hijab.name} className="abaya-img"/></Link>
-                <div id="sm-cart">
-                <p style={{marginTop:'1%',marginBottom:"1%"}}>{hijab.name}</p>
-                <h6>Rs. {hijab.price} PKR</h6>
-                    <button className='b1' >
-                        <img src='../images/shopping-bag.png' alt='l' style={{width:'21px',height:'21px',marginRight:'3%',marginBottom:'1%'}}/>ADD TO CART</button>
-                     </div>
-                     </div>
-                 ))}
-
-            </div>
-                </div>
+        <div className="banner-content">
+          <h1>Welcome to our store!</h1>
+          <p>Discover the latest fashion trends and shop with us.</p>
+          <Link to="/abayapage" className="banner-button">
+            Shop Now
+          </Link>
         </div>
-    )
-}export default Content;
+      </div>
+      <div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br /> <br /> <br />
+        <br />
+      </div>
+
+
+      <div style={{ fontSize: "20px" , textAlign:"center"}}>
+        <p>
+          The Elegance & Modesty, You All Crave For — Pakistan's Only & <br />{" "}
+          Largest Modest Attire Brand.
+        </p>
+      </div>
+      <div className="category-section">
+        <h2>SHOP BY CATEGORY</h2>
+        <ul className="category-list">
+          {categories.map((category, index) => (
+            <li key={index}>
+              <div className="category-item">
+                <img src={category.image} alt={category.name} />
+                <Link to={category.link} className="category-button">
+                  {category.name}
+                </Link>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="new-arrivals">
+        <h2>NEW ARRIVALS</h2>
+        <div className="view-all-section">
+          <Link to="/abayapage" className="view-all-button">
+            View All
+          </Link>
+        </div>
+        <div className="product-list">
+          {Newarrivals.map((product, index) => (
+            <div className="product" key={index}>
+              <img src={product.image} alt={product.name} />
+              <h3>{product.name}</h3>
+              <p>{product.price}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+   
+
+      <div className="banner">
+        <img src="images/malbus1.jpg" alt="Banner" />
+        <div className="banner-text">
+          <h2>LUXE MALBUS</h2>
+          <p>
+            Head Office: Plot #2, Industrial Triangle, Humak, Model Town,
+            Islamabad
+          </p>
+          <p>Outlet: Shop # 254, 2nd Floor, The Centaurus Mall, Islamabad</p>
+          <p>Monday - Thursday, 11:00 AM (PST) - 11:00 PM (PST)</p>
+          <p>Friday - Sunday, 11:00 AM (PST) - 12:00 AM (PST)</p>
+        </div>
+      </div>
+      <div>
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+    </div>
+  )
+}
+
+export default Homecontent

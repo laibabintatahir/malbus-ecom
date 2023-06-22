@@ -1,6 +1,6 @@
 
 .login-container {
-  /* background: url('../../public/images/loginback.png'); */
+  background: url('../../public/images/loginback.png');
 
     display: flex;
     justify-content: center;
