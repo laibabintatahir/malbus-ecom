@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
+
 import '../asets/content.css';
 
 function Content() {
@@ -22,10 +24,10 @@ function Content() {
   return (
     <div>
       <div>
-        <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+        {/* <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="../images/D2.png" className="d-block w-100" alt="..." />
+              <img src="../images/malbus.jpg" className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
               <img src="../images/d3.png" className="d-block w-100" alt="..." />
@@ -42,8 +44,39 @@ function Content() {
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>
           </button>
+        </div> */}
+
+        <div className="banner-container">
+          <Carousel autoPlay infiniteLoop showThumbs={false}>
+            <div>
+              <img src="../images/ss1.jpg" alt="Banner 1" />
+            </div>
+            <div>
+              <img src="../images/ss1.jpg" alt="Banner 2" />
+            </div>
+          </Carousel>
+
+          <div className="banner-content">
+            <h1>Welcome to our store!</h1>
+            <p>Discover the latest fashion trends and shop with us.</p>
+            <Link to="/abayapage" className="banner-button">
+              Shop Now
+            </Link>
+          </div>
         </div>
         <div></div>
+      </div>
+      
+      <div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br /> <br /> <br />
+        <br />
       </div>
       <h3 className="new-arr">NEW ARRIVAL ABAYAS</h3>
       <div>
