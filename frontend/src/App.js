@@ -6,7 +6,7 @@ import Cart from "./Components/cartdetail";
 import Hijab from "./Components/hijab";
 import SignUpForm from "./Components/signup";
 import AbayaDetail from "./Components/abayadetails";
-import Bundles from "./Components/hijabbundles";
+import Bundles from "./Components/accessories";
 import About from "./Components/aboutus";
 import { useState } from "react";
 import Admin from "./Components/admindashboard";
