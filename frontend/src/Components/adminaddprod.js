@@ -127,120 +127,99 @@
 
 // export default AddProduct;
 
-
-import React from "react";
-import Nav from "./adminnav";
-import "../asets/admindashboard.css";
-import { useState } from "react";
-import { addProduct } from "../Service/api";
+import React from 'react';
+import Nav from './adminnav';
+import '../asets/admindashboard.css';
+import { useState } from 'react';
+import { addProduct } from '../Service/api';
 
 function AddProduct() {
   const [product, setProduct] = useState({
-    name: "",
-    category: "",
+    name: '',
+    category: '',
     price: 0,
-    image: null,
-    selected: false
+    selected: false,
   });
 
   const saveDetails = async (e) => {
     e.preventDefault();
-    console.log("after saving:", product);
-    const formData = new FormData();
-
-    formData.append("name", product.name);
-    formData.append("category", product.category);
-    formData.append("price", product.price);
-    formData.append("image", product.image);
-    console.log(formData);
-    await addProduct(formData);
+    console.log('after saving:', product);
+    await addProduct(product);
   };
 
   const handleChange = (e) => {
     setProduct({ ...product, [e.target.name]: e.target.value });
   };
 
-  const handleImage = (e) => {
-    setProduct({ ...product, [e.target.name]: e.target.files[0] });
-  };
-
   return (
     <div>
       <div>
         <Nav />
-        <br />   <br />
+        <br /> <br />
       </div>
-      <div className="add-product">
+      <div className='add-product'>
         <h3>Add Product</h3>
-        <div className="row" style={{ marginTop: "2%" }}>
-          <div className="col">
-            <label style={{ marginTop: '2%', marginBottom: '1%' }}>Product Name:</label>
-            <input
-              type="text"
-              className="form-control"
-              aria-label="name"
-              name="name"
-              onChange={handleChange}
-            />
+        <form onSubmit={saveDetails}>
+          <div className='row' style={{ marginTop: '2%' }}>
+            <div className='col'>
+              <label style={{ marginTop: '2%', marginBottom: '1%' }}>
+                Product Name:
+              </label>
+              <input
+                type='text'
+                className='form-control'
+                aria-label='name'
+                name='name'
+                onChange={handleChange}
+              />
+            </div>
           </div>
-        </div>
-        <div className="row" style={{ marginTop: "2%" }}>
-          <div className="col">
-            <label style={{ marginTop: '2%', marginBottom: '1%' }}>Product Price:</label>
-            <input
-              type="number"
-              className="form-control"
-              aria-label="Last name"
-              name="price"
-              onChange={handleChange}
-            />
+          <div className='row' style={{ marginTop: '2%' }}>
+            <div className='col'>
+              <label style={{ marginTop: '2%', marginBottom: '1%' }}>
+                Product Price:
+              </label>
+              <input
+                type='number'
+                className='form-control'
+                aria-label='Last name'
+                name='price'
+                onChange={handleChange}
+              />
+            </div>
           </div>
-        </div>
-        <div className="row" style={{ marginTop: "2%" }}>
-          <div className="col">
-            <label style={{ marginTop: '2%', marginBottom: '1%' }}>Product Category:</label>
-            <select className="form-control">
-              <option>abaya</option>
-              <option>hijab</option>
-              <option>niqab</option>
-              <option>cap</option>
-            </select>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Category"
-              aria-label="First name"
-              name="category"
-              onChange={handleChange}
-            />
+          <div className='row' style={{ marginTop: '2%' }}>
+            <div className='col'>
+              <label style={{ marginTop: '2%', marginBottom: '1%' }}>
+                Product Category:
+              </label>
+              <select
+                className='form-control'
+                name='category'
+                onChange={handleChange}
+              >
+                <option>abaya</option>
+                <option>hijab</option>
+                <option>niqab</option>
+                <option>cap</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <div className="row" style={{ marginTop: "2%" }}>
-          <div className="col">
-            <label style={{ marginTop: '2%', marginBottom: '1%' }}>Product Image:</label>
-            <input
-              type="file"
-              className="form-control"
-              aria-label="First name"
-              name="image"
-              onChange={handleImage}
-            />
+          <div className='row'>
+            <button
+              type='submit'
+              style={{
+                marginTop: '2%',
+                width: '40%',
+                marginLeft: '30%',
+                background: 'pink',
+                borderRadius: '10px',
+              }}
+            >
+              Save
+            </button>
           </div>
-        </div>
-        <div className="row">
-          <button
-            style={{
-              marginTop: "2%",
-              width: "40%",
-              marginLeft: "30%",
-              background: "pink",
-              borderRadius: "10px",
-            }}
-            onClick={saveDetails}
-          >
-            Save
-          </button>
-        </div>
+        </form>
       </div>
     </div>
   );
