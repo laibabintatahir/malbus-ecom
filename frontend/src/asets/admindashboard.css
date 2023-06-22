@@ -1,0 +1,57 @@
+/* navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9cece;
+    padding: 10px;
+  }
+  
+  .logo2-container {
+margin-left: 2%;
+  }
+  
+  .logo2-container img {
+    width: 120px;
+    height: auto;
+  }
+  
+  .menu-container {
+    margin-right: 5%;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .menu-item {
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    
+  }
+  
+  .menu-item  {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .menu-item :hover {
+    text-decoration: underline;
+    color: black;
+
+  }
+  .menu-icon {
+    margin-right: 5px;
+  }
+  .add-product{
+    width: 50%;
+    margin-top:1% ;
+    margin-left: 27%;
+    border: 1px solid rgb(190, 188, 188);
+    padding: 3%;
+    border-radius: 20px;
+    background-color:  rgba(196, 175, 175, 0.5);;
+  }
