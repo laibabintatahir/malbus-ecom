@@ -2,7 +2,7 @@ import Header from "./header";
 import '../asets/abaya.css';
 import { Link } from "react-router-dom";
 import Footer from "./footer";
-import { useContext, useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import { getProduct } from "../Service/api";
 
 function Hijab() {

@@ -1,88 +1,62 @@
 /* footer.css */
 
 .footer {
-  background-color: #f3dec3;
-  padding: 40px 0;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
-.footer-container {
+.container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-left: 70px;
+  justify-content: space-between;
 }
 
-.footer-col {
-  flex: 1 1 30%;
-  max-width: 30%;
+.footer-section {
+  flex: 1;
+  margin-right: 40px;
 }
 
 .footer-heading {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.footer-heading span {
-  color: #e12626;
-}
-
-.footer-description {
-  color: #555555;
-  margin-bottom: 20px;
-}
-
-.footer-icons {
-  display: flex;
-}
-
-.footer-icon {
-  color: #555555;
-  font-size: 20px;
-  margin-right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .footer-links {
   list-style: none;
-  margin: 0;
   padding: 0;
+  color: #333;
 }
 
 .footer-links li {
-  margin-bottom: 10px;
-}
-
-.footer-links a {
-  color: #555555;
+  margin-bottom: 5px;
+  color: #333;
   text-decoration: none;
 }
 
-.footer-contact {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.footer-links li a {
+  color: #333;
+  text-decoration: none;
 }
 
-.footer-contact li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  color: #555555;
+.social-icons a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
 }
 
-.footer-contact i {
-  margin-right: 10px;
+.social-icons a:hover {
+  color: #555;
 }
 
 .footer-bottom {
-  background-color: #131313;
-  /* padding: 10px; */
-  padding-bottom: 4px;
+  margin-top: 20px;
   text-align: center;
+  font-size: 14px;
+  color: #777;
 }
 
-.footer-text {
-  color: #f8f3f3;
+.footer-bottom p {
+  margin-bottom: 5px;
 }
-
-/* Additional styling can be added as needed */
 
