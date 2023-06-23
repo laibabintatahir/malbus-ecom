@@ -15,7 +15,9 @@ function Hijab() {
 
   const getProducts = async () => {
     const products = await getProduct();
-    setHijab(products.data);
+
+    const data=products.data.filter((product)=>(product.category==='hijab'))
+    setHijab(data);
   };
 
   const addToCart = (item) => {

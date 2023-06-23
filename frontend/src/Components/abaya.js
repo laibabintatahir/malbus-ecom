@@ -11,8 +11,7 @@ function Abaya() {
   useEffect(() => {
     async function fetchData() {
       const request = await getProduct();
-      setAbaya(request.data);
-      return request;
+      setAbaya(request.data)
     }
     fetchData();
   }, []);
@@ -31,7 +30,6 @@ function Abaya() {
     console.log(updated);
   };
 
-  // const filteredAbaya = abaya.filter((item) => item.category === 'abaya');
 
   return (
     <div className='abaya'>

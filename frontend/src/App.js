@@ -13,7 +13,7 @@ import Admin from './Components/admindashboard';
 import AddProduct from './Components/adminaddprod';
 import Customers from './Components/admincustomer';
 import ContactUs from './Components/contact';
-
+import Signup from './Components/signup';
 function App() {
   const [cartItems, setCartItems] = useState([]);
   const addToCart = (item) => {
@@ -40,6 +40,7 @@ function App() {
         <Route path='/Components/admin' element={<Admin />}></Route>
         <Route path='/adminaddprod' element={<AddProduct />} />
         <Route path='/Components/admincustomer' element={<Customers />} />
+        <Route path='/Components/signup' element={<Signup />} />
       </Routes>
     </div>
   );
