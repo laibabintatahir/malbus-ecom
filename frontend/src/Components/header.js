@@ -33,6 +33,9 @@ function Header() {
               <Link to='/Components/contact'>
                 <li>CONTACT US</li>
               </Link>
+              <Link to='/Components/admin'>
+                <li>Admin</li>
+              </Link>
             </ul>
           </nav>
         </div>
